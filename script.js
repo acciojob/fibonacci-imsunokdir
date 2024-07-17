@@ -1,13 +1,15 @@
 
 
-function fibnocci(n) {
+function fibnocci(n,memo = {}) { 
     if (n <= 0) return 0;
-    if (n === 1) return 0; 
-    if (n === 2) return 1; 
-    return fibnocci(n - 1) + fibnocci(n - 2);
+    if (n === 1) return 1;
+    if (memo[n]) return memo[n];
+
+    memo[n] = fibnocci(n - 1, memo) + fibnocci(n - 2, memo);
+    return memo[n];
 } 
 
 // const n = parseInt(prompt("Enter n"));
-// alert(fibnocci(n))
+// alert(fibnocci(n))  
 
 module.exports = fibnocci;
