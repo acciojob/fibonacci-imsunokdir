@@ -7,5 +7,5 @@ function fibonacci(n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-const n = parseInt(prompt("Enter n"));
-alert(fibonacci(n))
+// const n = parseInt(prompt("Enter n"));
+// alert(fibonacci(n))
