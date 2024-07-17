@@ -7,7 +7,7 @@ function fibnocci(n) {
     return fibnocci(n - 1) + fibnocci(n - 2);
 } 
 
-const n = parseInt(prompt("Enter n"));
-alert(fibnocci(n))
+// const n = parseInt(prompt("Enter n"));
+// alert(fibnocci(n))
 
 module.exports = fibnocci;
